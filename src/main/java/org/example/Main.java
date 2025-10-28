@@ -6,16 +6,3 @@ public class Main {
     }
 }
 
-class Task {
-    void assignTo(String teamMember) {
-
-    }
-
-    void updateStatus(boolean newStatus) {
-
-    }
-
-    boolean isOverDue() {
-        return false;
-    }
-}
