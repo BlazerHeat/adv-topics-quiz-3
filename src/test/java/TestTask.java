@@ -9,4 +9,10 @@ public class TestTask {
         Task task = new Task();
         Assert.assertTrue(task.isOverDue());
     }
+
+    @Test
+    public void isOverDueNegative() {
+        Task task = new Task();
+        Assert.assertFalse(task.isOverDue());
+    }
 }
