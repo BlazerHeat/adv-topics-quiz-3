@@ -4,6 +4,16 @@ import org.junit.Test;
 
 public class TestTask {
 
+
+    @Test
+    public void testAssignTeamMember() {
+        Task task = new Task();
+        String teamMember = "Vatsal";
+        task.assignTo(teamMember);
+
+        Assert.assertEquals(teamMember, task.getTeamMember());
+    }
+
     @Test
     public void isOverDuePositive() {
         // Assuming current time is 10
@@ -14,6 +24,7 @@ public class TestTask {
 
     @Test
     public void isOverDueNegative() {
+        // Assuming current time is 10
         Task task = new Task();
         task.setDueTime(20);
         Assert.assertFalse(task.isOverDue());
