@@ -7,7 +7,7 @@ public class Task {
     private String teamMember;
 
     public void assignTo(String teamMember) {
-
+        this.teamMember = teamMember;
     }
 
     public String getTeamMember() {
