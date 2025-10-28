@@ -4,6 +4,13 @@ import org.junit.Test;
 
 public class TestTask {
 
+    @Test
+    public void testUpdateStatusPositive() {
+        Task task = new Task();
+        task.updateStatus(true);
+
+        Assert.assertTrue(task.currentStatus);
+    }
 
     @Test
     public void testAssignTeamMember() {

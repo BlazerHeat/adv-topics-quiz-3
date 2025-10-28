@@ -3,6 +3,7 @@ package org.example;
 public class Task {
     private static int currentTime = 10;
     private int dueTime;
+    public boolean currentStatus = false;
 
     private String teamMember;
 
@@ -15,7 +16,6 @@ public class Task {
     }
 
     public void updateStatus(boolean newStatus) {
-
     }
 
     public void setDueTime(int dueTime) {
