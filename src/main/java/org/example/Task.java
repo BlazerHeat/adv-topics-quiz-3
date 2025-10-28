@@ -1,6 +1,9 @@
 package org.example;
 
 public class Task {
+    private static int currentTime = 10;
+    private int dueTime;
+
     public void assignTo(String teamMember) {
 
     }
@@ -9,7 +12,11 @@ public class Task {
 
     }
 
+    public void setDueTime(int dueTime) {
+        this.dueTime = dueTime;
+    }
+
     public boolean isOverDue() {
-        return true;
+        return this.dueTime < currentTime;
     }
 }
